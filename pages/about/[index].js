@@ -1,12 +1,12 @@
 import Header from "@/components/organisms/header/Header";
+import About from "@/components/molecules/about/About";
 import Footer from "@/components/organisms/footer/Footer";
-import Styles from "./about.module.css";
 
 const index = () => {
   return (
     <>
       <Header />
-      <div className={Styles.wrapper}>about</div>
+      <About />
       <Footer />
     </>
   );
