@@ -1,0 +1,39 @@
+.wrapper {
+  margin-top: 5.5rem;
+  margin-left: 5rem;
+  width: 75%;
+  height: 900px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 6px solid rgb(165, 159, 40);
+}
+.photo {
+  z-index: 10;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: white;
+  width: 30rem;
+  height: fit-content;
+  position: fixed;
+  left: 60%;
+  top: 10rem;
+}
+.textWrapper {
+  width: 60%;
+  padding-top: 12rem;
+  padding-left: 3rem;
+}
+.author {
+  font-size: 6.5rem;
+  color: rgb(165, 159, 40);
+}
+.author1 {
+  font-size: 4rem;
+  color: rgb(165, 159, 40);
+}
+.author2 p {
+  text-indent: 2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
