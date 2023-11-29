@@ -1,12 +1,12 @@
 import Header from "@/components/organisms/header/Header";
 import Footer from "@/components/organisms/footer/Footer";
-import Publications from "@/components/molecules/publications/publications";
+import Contact from "@/components/molecules/contact/Contact";
 
 const index = () => {
   return (
     <>
       <Header />
-      <Publications />
+      <Contact />
       <Footer />
     </>
   );

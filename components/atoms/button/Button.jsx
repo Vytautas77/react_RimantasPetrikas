@@ -35,4 +35,16 @@ const ButtonDel = ({ type, onClick }) => {
   );
 };
 
-export { Button, ButtonDel, ButtonAdd };
+const ButtonSend = ({ type, onClick }) => {
+  return (
+    <button
+      type="submit"
+      className={`${styles.button} ${SmoochSans.className}`}
+      onClick={onClick}
+    >
+      SEND
+    </button>
+  );
+};
+
+export { Button, ButtonDel, ButtonAdd, ButtonSend };

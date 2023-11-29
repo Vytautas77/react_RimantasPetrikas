@@ -18,10 +18,13 @@ const Header = () => {
               <Link href="/about/index.js"> About</Link>
             </li>
             <li>
-              <Link href="/photoGallery/index.js"> Photo Gallery</Link>
+              <Link href="/photoGallery/index.js"> Photo Albums</Link>
             </li>
             <li>
               <Link href="/publications/index.js"> Publications</Link>
+            </li>
+            <li>
+              <Link href="/contact/index.js"> Contact</Link>
             </li>
           </ul>
         </nav>
