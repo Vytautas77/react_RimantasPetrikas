@@ -11,7 +11,11 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 const Main = () => {
   return (
     <div className={Styles.wrapper}>
-      <Image src={photo} className={Styles.photo} />
+      <Image
+        src={photo}
+        className={Styles.photo}
+        alt="Rimanto Petriko nnuotrauka"
+      />
       <div className={Styles.textWrapper}>
         <div className={`${SmoochSans.className} ${Styles.author}`}>
           RIMANTAS PETRIKAS

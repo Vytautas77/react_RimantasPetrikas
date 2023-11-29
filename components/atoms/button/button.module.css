@@ -9,3 +9,6 @@
   background-color: rgb(165, 159, 40);
   cursor: pointer;
 }
+.delete {
+  background-color: red;
+}

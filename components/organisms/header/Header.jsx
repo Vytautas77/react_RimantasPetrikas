@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import { Smooch_Sans } from "next/font/google";
 import Link from "next/link";
-import Button from "@/components/atoms/button/Button";
+import { Button } from "@/components/atoms/button/Button";
 
 const SmoochSans = Smooch_Sans({ subsets: ["latin"] });
 

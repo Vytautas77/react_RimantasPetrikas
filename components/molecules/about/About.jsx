@@ -8,7 +8,11 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 const about = () => {
   return (
     <>
-      <Image src={photo} className={Styles.photo} />
+      <Image
+        src={photo}
+        className={Styles.photo}
+        alt="Rimanto Petriko nuotrauka"
+      />
       <div className={Styles.wrapper}>
         <div className={`${roboto.className} ${Styles.about}`}>
           <p>

@@ -11,4 +11,28 @@ const Button = () => {
   );
 };
 
-export default Button;
+const ButtonAdd = ({ onclick }) => {
+  return (
+    <button
+      className={`${styles.button} ${SmoochSans.className}`}
+      onClick={onclick}
+    >
+      Add new album
+    </button>
+  );
+};
+
+const ButtonDel = ({ type, onClick }) => {
+  return (
+    <button
+      className={`${styles.button} ${SmoochSans.className} ${
+        type === "Delete" && styles.delete
+      }`}
+      onClick={onClick}
+    >
+      DELETE
+    </button>
+  );
+};
+
+export { Button, ButtonDel, ButtonAdd };
