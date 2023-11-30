@@ -81,7 +81,7 @@ const Contact = () => {
         <textarea
           className={Styles.textarea}
           rows="4"
-          cols="45"
+          cols="42"
           type="text"
           value={inputDescription}
           onChange={(e) => setInputDescription(e.target.value)}
