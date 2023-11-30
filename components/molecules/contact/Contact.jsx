@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Styles from "./contact.module.css";
-import { ButtonSend } from "@/components/atoms/button/Button";
+import { Button } from "@/components/atoms/button/Button";
 import { Smooch_Sans } from "next/font/google";
 import { useRouter } from "next/router";
 
@@ -91,8 +91,8 @@ const Contact = () => {
             onChange={(e) => setCheckbox(e.target.checked)}
           />
         </div>
-        <div className={Styles.buttonSend} onClick={sendInfo}>
-          <ButtonSend />
+        <div className={Styles.buttonSend}>
+          <Button text="SEND" onClick={sendInfo} />
         </div>
       </div>
     </div>

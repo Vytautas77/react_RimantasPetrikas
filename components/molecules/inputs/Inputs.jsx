@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Styles from "./inputs.module.css";
-import { ButtonAdd } from "@/components/atoms/button/Button";
+import Button from "@/components/atoms/button/Button";
 import { Roboto } from "next/font/google";
 import { Smooch_Sans } from "next/font/google";
 import { useRouter } from "next/router";
@@ -71,8 +71,8 @@ const Inputs = () => {
           onChange={(e) => setInputPhotoUrl(e.target.value)}
           placeholder="Album photo url"
         />
-        <div onClick={insertAlbum}>
-          <ButtonAdd />
+        <div>
+          <Button text="Add new album" onClick={insertAlbum} />
         </div>
       </div>
     </div>

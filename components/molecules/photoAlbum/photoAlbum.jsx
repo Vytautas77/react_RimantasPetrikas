@@ -1,7 +1,7 @@
 import Styles from "./photoAlbum.module.css";
 import { Smooch_Sans } from "next/font/google";
 import { Roboto } from "next/font/google";
-import { ButtonDel } from "@/components/atoms/button/Button";
+import Button from "@/components/atoms/button/Button";
 import Link from "next/link";
 
 const SmoochSans = Smooch_Sans({ subsets: ["latin"] });
@@ -20,7 +20,7 @@ const photoAlbum = ({ title, description, imgUrl, removeAlbum, id }) => {
         </Link>
         <div className={roboto.className}>{description}</div>
         <div className={Styles.button}>
-          <ButtonDel type="Delete" onClick={onDeleteButtonClick} />
+          <Button text="DELETE" type="Delete" onClick={onDeleteButtonClick} />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import Styles from "./photoAlbums.module.css";
 import PhotoAlbum from "@/components/molecules/photoAlbum/photoAlbum";
-import { ButtonAdd } from "@/components/atoms/button/Button";
-import Link from "next/link";
+import Button from "@/components/atoms/button/Button";
+// import Link from "next/link";
 import { useRouter } from "next/router";
 
 const PhotoAlbums = ({ albums, setAlbums }) => {
@@ -33,8 +33,8 @@ const PhotoAlbums = ({ albums, setAlbums }) => {
           </div>
         ))}
       </div>
-      <div className={Styles.buttonAdd} onClick={onAddButtonClick}>
-        <ButtonAdd />
+      <div className={Styles.buttonAdd}>
+        <Button text="Add new album" onClick={onAddButtonClick} />
       </div>
     </>
   );
