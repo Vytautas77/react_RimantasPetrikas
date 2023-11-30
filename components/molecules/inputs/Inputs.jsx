@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Styles from "./inputs.module.css";
 import Button from "@/components/atoms/button/Button";
@@ -13,7 +13,11 @@ const Inputs = () => {
   const [inputTitle, setInputTitle] = useState("");
   const [inputDescription, setInputDescription] = useState("");
   const [inputPhotoUrl, setInputPhotoUrl] = useState("");
+  const inputRef = useRef(null);
   // const [albums, setAlbums] = useState(null);
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const validateInputs = () => {
     if (!inputTitle || !inputDescription || !inputPhotoUrl) {
@@ -54,6 +58,7 @@ const Inputs = () => {
       <div className={Styles.inputsBox}>
         <h2 className={SmoochSans.className}>Įkelti galeriją</h2>
         <input
+          ref={inputRef}
           type="text"
           value={inputTitle}
           onChange={(e) => setInputTitle(e.target.value)}

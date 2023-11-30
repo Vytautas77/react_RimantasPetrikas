@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Styles from "./contact.module.css";
-import { Button } from "@/components/atoms/button/Button";
+import Button from "@/components/atoms/button/Button";
 import { Smooch_Sans } from "next/font/google";
 import { useRouter } from "next/router";
 
@@ -12,6 +12,10 @@ const Contact = () => {
   const [inputDescription, setInputDescription] = useState("");
   const [checkbox, setCheckbox] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const inputRef = useRef(null);
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const validateInputs = () => {
     return (
@@ -58,10 +62,11 @@ const Contact = () => {
         <h2 className={SmoochSans.className}>Susisiekti</h2>
         {showSuccess && (
           <div className={Styles.successMessage}>
-            Form submitted successfully! Page will refresh in 5 seconds.
+            Su jumis susisieksime per kelias dienas
           </div>
         )}
         <input
+          ref={inputRef}
           type="text"
           value={inputTitle}
           onChange={(e) => setInputTitle(e.target.value)}
